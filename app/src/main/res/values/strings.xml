@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Phrasebook</string>
+    <string name="uknown_error">Uknown error</string>
 </resources>

@@ -89,7 +89,8 @@ fun SearchBar(
                 focusedLeadingIconColor = Color(0xFFF44336),
                 focusedTextColor = Color.Black,
                 unfocusedTextColor = Color.Black,
+                focusedIndicatorColor = Color(0xFFF44336),
             )
         )
     }
-}z
+}

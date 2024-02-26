@@ -4,9 +4,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CardElevation
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -15,12 +13,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.phrasebook.common.Title
-import com.example.phrasebook.domain.models.Topic
 
 @Composable
 fun TopicItem(
     modifier: Modifier = Modifier,
-    topic: Topic,
+    nameEn: String,
+    nameRu: String,
+    countPhrase: String,
     onClickItem: () -> Unit,
 ) {
     ElevatedCard(
@@ -48,7 +47,7 @@ fun TopicItem(
                 )
         ) {
             Title(
-                text = topic.title
+                text = nameEn
             )
             Text(
                 modifier = Modifier
@@ -56,12 +55,12 @@ fun TopicItem(
                         top = 8.dp,
                         bottom = 16.dp,
                     ),
-                text = topic.subhead,
+                text = countPhrase,
                 fontSize = 12.sp,
                 color = Color.Black,
             )
             Text(
-                text = topic.content,
+                text = nameRu,
                 color = Color.Black,
                 fontSize = 12.sp,
             )

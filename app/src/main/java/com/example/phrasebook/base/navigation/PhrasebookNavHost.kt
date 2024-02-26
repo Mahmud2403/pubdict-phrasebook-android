@@ -6,6 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.example.phrasebook.ui.screen.phrase_category.navigation.category
+import com.example.phrasebook.ui.screen.phrase_detail.navigation.phraseDetail
 import com.example.phrasebook.ui.screen.topic.navigation.TopicNavigation
 import com.example.phrasebook.ui.screen.topic.navigation.topic
 
@@ -25,7 +26,14 @@ fun PhrasebookNavHost(
             navigateTo = onNavigationToDestination
         )
 
-        category()
+        category(
+            navigateTo = onNavigationToDestination
+        )
+
+        phraseDetail(
+            onClickBack = onClickBack,
+            navigateTo = onNavigationToDestination,
+        )
     }
 
 }

@@ -45,7 +45,7 @@ fun PhrasebookTopAppBar(
                     vertical = 16.dp
                 )
                 .size(36.dp),
-            painter = painterResource(id = R.drawable.icon), 
+            painter = painterResource(id = R.drawable.mountains),
             contentDescription = null,
             tint = Color.White,
         )
@@ -53,7 +53,7 @@ fun PhrasebookTopAppBar(
             modifier = Modifier.weight(1f)
         ) {
             Text(
-                text = "Japanese",
+                text = "Dagestan",
                 color = Color.White,
                 fontSize = 18.sp
             )
